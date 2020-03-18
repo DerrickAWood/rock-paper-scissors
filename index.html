@@ -7,13 +7,31 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
   </head>
-  <body>
+  <body class="bg-primary">
 
-    <header>
+    <header class="container-fluid">
       <div class="row">
-        <div class="col-12">Rock Paper Scissors</div>
+        <div class="col-12 bg-dark text-light text-center"><h1>Rock Paper Scissors</h1>
+        <p>Take Your Pick!</p></div>
       </div>
     </header>
+
+    <main class="container-fluid">
+      <div class="row">
+        <div class="col-4"> 
+          <img onclick="userChoice()" src="https://thumbs.dreamstime.com/b/sad-japanese-cartoon-rock-digital-illustration-115997971.jpg"><div>
+        <div class="col-4">
+          <img onclick="userChoice()" src="https://clipartmag.com/images/paper-animated-5.jpg"></div>
+        <div class="col-4">
+          <img onclick="userChoice()" src="https://cdn4.vectorstock.com/i/1000x1000/16/88/angry-scissor-character-cartoon-style-vector-18401688.jpg" alt=""></div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <h1 id="result"> </h1>
+        </div>
+      </div>
+    </main>
 
 
 
