@@ -1,4 +1,9 @@
 img{
   height: 15vh;
   border-radius: 50%;
+  box-shadow:  5px 10px  darkblue;
+}
+
+img:hover{
+  cursor: pointer;
 }
