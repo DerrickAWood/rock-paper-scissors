@@ -1,3 +1,8 @@
+let scoreElem = document.getElementById("myScore")
+let score = 0
+let compScore = 0
+let compElem = document.getElementById("otherScore")
+
 
 function userChoice(){
   result()
@@ -16,10 +21,14 @@ function result(){
 }
 
 function lost(){
+  compScore++
+  compElem.innerText = compScore.toString()
   document.getElementById("result").innerText = "You Suck"
 }
 
 function win(){
+  score++
+  scoreElem.innerText = score.toString()
   document.getElementById("result").innerText = "You got it!"
 }
 
